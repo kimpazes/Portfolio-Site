@@ -41,3 +41,49 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #424242;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #424242;
+}
+a:hover {
+  color: #00A2AD;
+  text-decoration: none; /* No underlining */
+}
+a:active { /* selected link */
+  color: #00A2AD;
+}
+
+
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #d8d8d8;
+  color: #424242; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #d8d8d8; /* width of the border, type, color */
+  transition: 0.5s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #00A2AD;
+  text-transform: uppercase;
+  border: 2px solid #00A2AD;
+}
+.button.contact:hover {
+  background-color: #00A2AD;
+  color: #ffffff;
+}
