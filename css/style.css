@@ -5,7 +5,6 @@ Secondary Background Color (Light Grey): #d8d8d8;
 Tertiary Color (Green): #00A2AD;
 Text Color (Dark Grey): #424242;
 */
-
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -23,12 +22,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.20em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.00em;
   font-weight: 700;
 }
 
@@ -48,42 +47,198 @@ img {
 
 a {
   color: #424242;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #424242;
 }
+
 a:hover {
   color: #00A2AD;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #00A2AD;
 }
 
-
+a:focus {
+  color: #00A2AD;
+  text-decoration: none;
+  /* No underlining */
+}
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #d8d8d8;
-  color: #424242; /* needed to override the default link color */
+  color: #424242;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 20px;
-  border: 1px solid #d8d8d8; /* width of the border, type, color */
+  border: 1px solid #d8d8d8;
+  /* width of the border, type, color */
   transition: 0.5s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #00A2AD;
+  padding: 10px;
   text-transform: uppercase;
+  transition: 0.2s opacity;
   border: 2px solid #00A2AD;
+  margin-bottom: 15px;
 }
+
 .button.contact:hover {
   background-color: #00A2AD;
   color: #ffffff;
+}
+
+.button.contact:active {
+  background-color: #00A2AD;
+  color: #ffffff;
+}
+
+/* Layout styling */
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.17);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.17);
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.17);
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav>ul>li>a:active {
+  color: #00A2AD;
+}
+
+nav>ul>li>a:hover {
+  color: #00A2AD;
+  text-decoration: none;
+}
+
+/*main styling*/
+main {
+  padding-top: 120px;
+}
+
+/* hero styling*/
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+}
+#hero h2 {
+  text-align: left;
+  margin: 15px 0;
+}
+#hero p {
+  text-align: left;
+}
+
+/* footer styling */
+#contact h2 {
+  text-align: center;
+}
+#contact p {
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 20;
+}
+
+.social {
+  display: inline-block;
+  width: 100%;
+  max-height: 55px;
+}
+
+/* about me page styling */
+.about {
+  text-align: center;
+  padding: 10px 10;
+  display: inline-block;
+  width: 100%;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+/* nata page styling */
+.nata {
+  text-align: center;
+  padding: 10px 10;
+  display: inline-block;
+  width: 100%;
+}
+
+.nata h1 {
+  text-align: center;
+}
+
+.nata h2 {
+  text-align: center;
 }
