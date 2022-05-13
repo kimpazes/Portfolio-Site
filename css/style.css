@@ -9,11 +9,8 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 300;
-  /* Sets the font weight to 300 */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
@@ -48,42 +45,34 @@ img {
 a {
   color: #424242;
   text-decoration: none;
-  /* No underlining */
 }
 
 a:visited {
-  /* visited link */
   color: #424242;
 }
 
 a:hover, a:focus {
   color: #00A2AD;
   text-decoration: none;
-  /* No underlining */
 }
 
 a:active {
-  /* selected link */
   color: #00A2AD;
 }
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #d8d8d8;
   color: #424242;
-  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 20px;
   border: 1px solid #d8d8d8;
-  /* width of the border, type, color */
   transition: 0.5s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -170,7 +159,7 @@ nav>ul>li>a:active {
 
 /*main styling*/
 main {
-  padding-top: 177px;
+  padding-top: 99px;
 }
 
 /* hero styling*/
@@ -179,6 +168,10 @@ main {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+#hero span {
+  display: block;
 }
 
 #hero h1 {
@@ -195,6 +188,7 @@ main {
   text-align: left;
   margin: 15px 0;
 }
+
 #hero p {
   text-align: left;
 }
@@ -203,22 +197,25 @@ main {
 #contact h2 {
   text-align: center;
 }
+
 #contact p {
   text-align: center;
 }
 
-footer { text-align: center;}
+footer {
+  text-align: center;
+}
 
 footer p {
   margin: 10px 20;
 }
 
 .social a {
-width: 2em;
-display: block;
-padding: 0;
-list-style-type: none;
-}`
+  width: 2em;
+  display: block;
+  padding: 0;
+  list-style-type: none;
+}
 
 /* about me page styling */
 .about {
@@ -246,4 +243,108 @@ list-style-type: none;
 
 .nata h2 {
   text-align: center;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+.col-md-6 {
+  width: 48%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0 10px
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-lg-7 {
+    width: 58%;
+  }
+
+  .col-lg-5 {
+    width: 38%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/*berlin animation*/
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 45s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 65s cloud-move-reverse infinite alternate linear;
 }
