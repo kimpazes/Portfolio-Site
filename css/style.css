@@ -116,14 +116,16 @@ header {
 .logo {
   max-width: 250px;
 }
+.section {padding: 4em 0;}
+
 
 .container {
   padding: 0 15px;
 }
 
 #work .row {
-  margin: 25px 0;
-  padding-bottom: 25px;
+  margin: 40px 0;
+  padding-bottom: 40px;
   border-bottom: 1px solid #4a4a4a;
   display: flex;
 }
@@ -270,6 +272,15 @@ footer p {
   margin-right: 0.5em;
 }
 
+.flexrow {display: flex;
+}
+
+.aboutimage {background-image: url("../img/kim@1x.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
 /*berlin animation*/
 .berlin-illustration {
   width: 100%;
@@ -369,12 +380,20 @@ Medium devices (640px and larger)
     max-width: 40%;
     margin-right: 1em;
   }
+
+.flexrow .column:last-child{padding-left: 2em;}
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  body {
+    font-size: 20px;
+  }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -412,4 +431,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+    .project main img {
+      display: block;
+    }
 }
