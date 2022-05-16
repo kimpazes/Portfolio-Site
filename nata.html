@@ -11,19 +11,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>About Kim</title>
+  <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="project">
   <header>
     <div class="container">
-      <a href="index.html"><img class="logo" src="img/logo.svg" alt="Kim Rudolph Pazes"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img class="logo" src="img/logo.svg" alt="Kim Rudolph Pazes"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -242,13 +246,13 @@
         <h2>Sketches</h2>
         <p>Exploratory sketches were created with old school pen and paper to generate and explore ideas quickly of how the screens and the app flow could look like.</p>
         <div class="horizontal">
-            <img src="img/nata/sketch_1.jpg" alt="sketch">
-            <img src="img/nata/sketch_2.jpg" alt="sketch">
-            <img src="img/nata/sketch_3.jpg" alt="sketch">
-            <img src="img/nata/sketch_4.jpg" alt="sketch">
-          </div>
-
+          <img src="img/nata/sketch_1.jpg" alt="sketch">
+          <img src="img/nata/sketch_2.jpg" alt="sketch">
+          <img src="img/nata/sketch_3.jpg" alt="sketch">
+          <img src="img/nata/sketch_4.jpg" alt="sketch">
         </div>
+
+      </div>
     </div>
 
     <div class="section">
@@ -398,6 +402,7 @@
       </p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

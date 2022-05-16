@@ -103,8 +103,7 @@ a:active {
 /* Layout styling */
 header {
   background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 14px;
   -webkit-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.17);
   -moz-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.17);
   box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.17);
@@ -114,8 +113,9 @@ header {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
+
 .section {padding: 4em 0;}
 
 
@@ -130,19 +130,10 @@ header {
   display: flex;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -163,6 +154,33 @@ nav>ul>li>a:hover, a:focus {
 
 nav>ul>li>a:active {
   color: #00A2AD;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /*main styling*/
@@ -272,13 +290,14 @@ footer p {
   margin-right: 0.5em;
 }
 
-.flexrow {display: flex;
-}
+.flexrow { display: flex; flex-direction: column;}
 
-.aboutimage {background-image: url("../img/kim@1x.png");
+.aboutimage {
+background-image: url("../img/kim@1x.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+min-height: 400px;
 }
 
 /*berlin animation*/
@@ -345,6 +364,26 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+     display: inline-block;
+   }
+
+   .navtoggle li:last-child {
+      display: none;
+    }
+
+  .logo {
+      max-width: 240px;
+    }
+
   .col-md-6 {
     width: 50%;
   }
@@ -383,6 +422,7 @@ Medium devices (640px and larger)
 
 .flexrow .column:last-child{padding-left: 2em;}
 
+.flexrow {flex-direction: row;}
 }
 
 /* ==============================
