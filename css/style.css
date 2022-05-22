@@ -439,6 +439,10 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
+  #infoabout{
+    text-align: left;
+  }
+
   .horizontal img {
     max-width: 40%;
     margin-right: 1em;
