@@ -68,7 +68,7 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #00A2AD;
+  background-color: #00838C;
   color: #ffffff !important;
   font-weight: 500;
   padding: 10px;
@@ -83,22 +83,22 @@ a:active {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #00A2AD;
+  background-color: #00838C;
+  color: #00838C;
   padding: 10px;
   text-transform: uppercase;
   transition: 0.2s opacity;
-  border: 2px solid #00A2AD;
+  border: 2px solid #00838C;
   margin-bottom: 15px;
 }
 
 .button.contact:hover {
-  background-color: #00A2AD;
+  background-color: #00838C;
   color: #ffffff;
 }
 
 .button.contact:active {
-  background-color: #00A2AD;
+  background-color: #00838C;
   color: #ffffff;
 }
 
@@ -425,6 +425,7 @@ Medium devices (640px and larger)
   #work .row {
     display: flex;
     flex-direction: row;
+    text-align:
   }
 
   #work [class*="col-"] {
