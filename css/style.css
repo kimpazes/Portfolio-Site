@@ -63,13 +63,13 @@ a:hover, a:focus {
 }
 
 a:active {
-  color: #00A2AD;
+  color: #ffffff;
 }
 
 .button {
   display: inline-block;
   background-color: #00A2AD;
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 500;
   padding: 10px;
   border-radius: 20px;
@@ -318,7 +318,7 @@ background-position: center;
 min-height: 400px;
 }
 
-#grey {background-color: #F8F7F7;
+.grey {background-color: #F8F7F7;
 padding: 0.5em;}
 
 #workcontent {border-bottom: 1px solid #d8d8d8;}
